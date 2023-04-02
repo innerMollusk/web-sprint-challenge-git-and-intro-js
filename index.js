@@ -247,8 +247,10 @@ Use listOfNames to do the following:
 
 function listOfNames(array) {
   const artistsCopy = [...array];
-  for(let i = 0; i < artistsCopy.length; i++) {
-    return artistsCopy[i].name;
+  const artistsName = [];
+  for(let i = 0; i < artistsCopy.length; i++) 
+  { artistsName.push(artistsCopy[i].name);
+          return artistsName;
   }
 }
 listOfNames(artists);
